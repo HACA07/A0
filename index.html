@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Connexion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-container">
+                <img src="logo.png" alt="Logo" class="logo">
+                <h1 class="header-title">SMI S6 Programmation Web</h1>
+            </div>
+        </header>
+        <main>
+            <form onsubmit="return goToPage2(event)">
+                <div class="form-group">
+                    <label for="identifiant">Identifiant :</label>
+                    <input type="text" id="identifiant" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mot de Passe :</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit" class="btn">Valider</button>
+            </form>
+        </main>
+        <footer>
+            <p>ecampus-fssm.uca.ma</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

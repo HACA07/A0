@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Étudiant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-container">
+                <img src="logo.png" alt="Logo" class="logo">
+                <h1 class="header-title">SMI S6 Programmation Web</h1>
+            </div>
+        </header>
+        <main>
+            <form onsubmit="return goToPage3(event)">
+                <div class="form-group">
+                    <label for="nom">Nom de l'étudiant :</label>
+                    <input type="text" id="nom" placeholder="Entrez le nom de l'étudiant" required>
+                </div>
+                <div class="form-group">
+                    <label for="resultat">Maths :</label>
+                    <input type="number" id="resultat1" placeholder="Entrez la note de Maths" required>
+                </div>
+                <div class="form-group">
+                    <label for="resultat">Informatique :</label>
+                    <input type="number" id="resultat" placeholder="Entrez la note d'informatique" required>
+                </div>
+                <div class="button-group">
+                    <button type="submit" class="btn">Résultat</button>
+                    <button type="button" class="btn btn-cancel" onclick="cancelAction()">Annuler</button>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <p>ecampus-fssm.uca.ma</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
